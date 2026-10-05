@@ -1,0 +1,26 @@
+import {createSlice} from "@reduxjs/toolkit";
+
+const propertDetailsSlice = createSlice({
+    name :"propertyDetails",
+    initialState:{
+        propertydetails:null,
+        loading:false,
+        error:null,
+    },
+    reducers:{
+        getListRequest(state){
+            state.loading=true
+        },
+        getPropertyDetails(state,action){
+            state.propertydetails = action.payload;
+            state.loading=false
+        },
+        getError(state,action){
+            state.error = action.payload;
+            state.loading=false
+        }
+    }
+})
+
+export const propertDetailsAction = propertDetailsSlice.actions;
+export default propertDetailsSlice;
