@@ -21,9 +21,6 @@ app.use(cors({
     ],
     credentials: true
 }));
-  credentials:true
-}))
-
 
 
 const PORT = process.env.PORT ;
