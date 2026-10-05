@@ -10,8 +10,8 @@ import {
   signup,
   updateMe,
   updatePassword,
-} from "../controllers/authController.js";
-import {writeDescription} from "../controllers/tripController.js"
+} from "../Controllers/authController.js";
+import {writeDescription} from "../Controllers/tripController.js"
 
 import { createProperty, getUsersProperties } from "../Controllers/propertyController.js";
 
